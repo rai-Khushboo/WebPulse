@@ -52,7 +52,7 @@
 
   }
 
-  .reset-score-button {
+  .reset-score-button ,.auto{
     border-color: white;
     border: none;
     font-size: 15px;
@@ -93,6 +93,7 @@
       localStorage.setItem('score', JSON.stringify(score));
       updateScoreElement();
     " class="reset-score-button">Reset Score</button>
+    <button class="auto" onclick="autoPlay();">Autoplay</button>
   </div>
   <script>
     let score;
