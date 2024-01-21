@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background-color: palevioletred;
+        font-family: cursive;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .first {
+        text-decoration: underline;
+        letter-spacing: 5px;
+        font-weight: bolder;
+    }
+
+    .form {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+        border-radius: 10px;
+        margin: 10px;
+
+    }
+
+    .input {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+        border: solid 4px green;
+        color: green;
+    }
+
+    .input::placeholder {
+        color: lightgray;
+        font-family: cursive;
+    }
+
+    .btn {
+        background-color: green;
+        color: #fff;
+        border: none;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        font-family: cursive;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: 0 2px 2px 4px rgba(0, 0, 0, 0, 0.3);
+    }
+
+    .btn:hover {
+        filter: brightness(0.9);
+    }
+
+    .score {
+        color: green;
+        text-align: right;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1 class="first">Multiplication - Game</h1>
+        <form class="form" id="form">
+            <h4 class="score" id="score">score: 0</h4>
+            <h1 id="question">What is 1 multiply by 1?</h1>
+            <input type="text" class="input" id="input" placeholder="Enter your answer" autofocus autocomplete="off">
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <script src="multiplication.js"></script>
+</body>
+
+</html>
